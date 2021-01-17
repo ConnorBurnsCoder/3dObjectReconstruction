@@ -2,9 +2,8 @@
 The goal of this project is to create a pipeline which completes the reconstruction of real life objects captured only through pictures. This reconstruction is three dimensional and maintains most of the color and texture of the object. I have demonstrated the use of the pipeline with a single 3d object, named “couple” which can be seen in the examples folder.
 
 The pipeline is as follows:
-
-
-1. Calibrate intrinsic and extrinsic camera parameters ![Alt text](couple/grab_0_u/color_C0_01.png?raw=true "Title")
+![Alt text](couple/grab_0_u/color_C0_01.png?raw=true "Title")
+1. Calibrate intrinsic and extrinsic camera parameters ![Alt text](calib_jpg_u/frame_C0_01.png?raw=true "Title")
 1. For each pair of images:
     1. Decode the images to get valid pixels (non-background pixels)
     1. Triangulate pixels to get 3d location and color
