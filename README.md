@@ -4,17 +4,17 @@ The goal of this project is to create a pipeline which completes the reconstruct
 The pipeline is as follows:
 
 
-Calibrate intrinsic and extrinsic camera parameters ->
-For each pair of images:
-  Decode the images to get valid pixels (non-background pixels) ->
-  Triangulate pixels to get 3d location and color ->
-  Trim 3d points using bounding box->
-  Uses Delauney Triangulation to create a mesh->
-  Trim any triangle with an edge greater than the max edge threshold->
-  smooth the mesh->
-Using Meshlab:
-  Merge the meshes->
-  Use poisson surface reconstruction to complete and smooth the merged meshes
+1. Calibrate intrinsic and extrinsic camera parameters
+1. For each pair of images:
+    1. Decode the images to get valid pixels (non-background pixels)
+    1. Triangulate pixels to get 3d location and color
+    1. Trim 3d points using bounding box
+    1. Uses Delauney Triangulation to create a mesh
+    1. Remove any triangle with an edge greater than the max edge threshold
+    1. Smooth the mesh
+1. Using Meshlab:
+    1. Merge the meshes
+    1. Use poisson surface reconstruction to complete and smooth the merged meshes
 
 To run the project on your personal machine run main.py
 ex: $python main.py
