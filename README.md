@@ -4,7 +4,7 @@ The goal of this project is to create a pipeline which completes the reconstruct
 The pipeline is as follows:
 
 
-1. Calibrate intrinsic and extrinsic camera parameters
+1. Calibrate intrinsic and extrinsic camera parameters ![Alt text](couple/grab_0_u/color_C0_01.png?raw=true "Title")
 1. For each pair of images:
     1. Decode the images to get valid pixels (non-background pixels)
     1. Triangulate pixels to get 3d location and color
