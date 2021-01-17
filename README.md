@@ -17,6 +17,7 @@ The pipeline is as follows:
     ![Alt text](Examples/images/merged_back.png?raw=true "Title")
     1. Use poisson surface reconstruction to complete and smooth the merged meshes
     ![Alt text](Examples/images/final_back.png?raw=true "Title")
+    ![Alt text](Examples/images/final_front.png?raw=true "Title")
 
 To run the project on your personal machine run main.py
 ex: $python main.py
